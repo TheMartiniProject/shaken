@@ -12,7 +12,7 @@ export const RecipeListItem = props => (
           <p>Ingredients: {props.ingredients.map(ingredient => (
             <div>{ingredient.textPlain}</div>
           ))}</p>
-          <a rel="noreferrer noopener" target="_blank" href={props.href}>Go to recipe!</a>
+          <p>Directions: {props.instructions}</p>
         </Col>
       </Row>
     </Container>
