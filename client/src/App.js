@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/home";
+import Careers from "./pages/careers";
 import Search from "./pages/search";
 import ListIngredients from "./pages/listIngredients";
 import Query from "./pages/query";
@@ -17,6 +18,7 @@ const App = () =>
       <Wrapper>
         <Route exact path="/" component={Home } />
         <Route exact path="/home" component={Home} />
+        <Route exact path="/careers" component={Careers} />
         <Route exact path="/query" component={Query} />
         <Route exact path="/search" component={Search} />
         <Route exact path="/listIngredients" component={ListIngredients} />

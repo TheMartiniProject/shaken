@@ -6,24 +6,27 @@ import query from "./query.css";
 
 
 class Query extends React.Component {
+  
   render() {
     return (
       <div>
         <SearchQueryPic/>
         <h1 className="text-center">Please make a Selection</h1>
         <div className="center-button">
+          
               <Button
                 onClick={this.handleFormSubmit}
                 type="warning"
                 className="input-lg btn-custom"
-                >  Search By Name
+                id="searchRecipe"
+                >  <a href="/search">Search By Name</a>
                </Button>
 
               <Button
                 onClick={this.handleFormSubmit}
                 type="warning"
                 className="input-lg btn-custom"
-                >  Search By ingredients
+                >  Add New Recipe
               </Button>
 
         </div>
