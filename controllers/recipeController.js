@@ -29,6 +29,24 @@ module.exports = {
       })
       .catch(err => res.status(422).json(err));
   },
+  create: function(req, res) {
+    console.log("passed from front end:",req.body);
+
+    let recipe = new db(req.body);
+
+    recipe.save(function(err, doc) {
+      // Log any errors
+      if (err) {
+        console.log(err);
+      }
+      // Or log the doc
+      else {
+        console.log("Successfully wrote to db");
+        console.log(doc);
+        res.send("/search");
+      }
+    });
+  },
   findRByName: function(req, res) {
     console.log(req.params.name);
     db

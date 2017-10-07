@@ -15,10 +15,9 @@ class Home extends React.Component {
     render() {
         return (
           <div >
-            <HomePic / >
-              <h1 className = "text-center" > Martini Cocktails and More
-              < /h1>
-                <h2 className = "text-center" > Disclaimer < /h2>
+            <HomePic />
+              <h1 className = "text-center" > Martini Cocktails and More</h1>
+                <h2 className = "text-center" > Disclaimer</h2>
                   <br/>
 
                 <div className = "g-signin2 text-center "
@@ -44,7 +43,7 @@ class Home extends React.Component {
                         It is intended to be an informational resource around alcoholic beverages, ingredients and preparation.The - Martini - Project provides this information with the intention that adults will use it to create and enjoy alcoholic beverages responsibly and in moderation.Viewers of this website and users of its content are wholly responsible to ensure compliance with their local food preparation and distribution laws.The - Martini - Project makes no representations that its recommendations align with the laws of the user’ s local jurisdiction. </p>
 
                         <p className ="mainPage" >
-                        ABarAbove in no way supports, condones, or encourages the consumption of alcoholic beverages in excess, or any other form of alcohol abuse.The - Martini - Project is not liable
+                        The Martini Project no way supports, condones, or encourages the consumption of alcoholic beverages in excess, or any other form of alcohol abuse.The - Martini - Project is not liable
                         for the use of its information by minors or or unlawful use or consumption of alcohol in any way. </p>
 
 

@@ -1,0 +1,19 @@
+input, textarea, container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+    border-width: 2px;
+    border-color: #000000;
+  }
+  
+  #add_new_band_btn{
+    padding:10px;
+    width:100%;
+    background: red;
+    color:white;
+    border:none;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  

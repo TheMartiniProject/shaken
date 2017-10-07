@@ -23,15 +23,16 @@ export default {
     // console.log(testapijs);
     return axios.get("/recipeAll");
   },
-  // postRecipeData: function(){
-  //   return axios.post("/addBand");
-  // },
+  saveRecipe: function(recipeData) {
+    // console.log("recipeData:", recipeData);
+    return axios.post("/createRecipe", recipeData);
+  },
   getOneRecipe: function(recipe_id){
-    console.log("this is the recipe real id: ", recipe_id);
+    // console.log("this is the recipe real id: ", recipe_id);
     return axios.get("/recipeName/" + recipe_id);
   },
   getRecipeByName: function(recipeSearch){
-    console.log("this is the recipe name: ", recipeSearch);
+    // console.log("this is the recipe name: ", recipeSearch);
     return axios.get("/recipeByName/" + recipeSearch);
   }
   // getDogs: function(){

@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
+import SearchPic from "../components/SearchPic";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import API from "../utils/API";
 import Video from "./video";
 import { RecipeList, RecipeListItem } from "../components/RecipeList";
 import { Container, Row, Col } from "../components/Grid";
-import Style from "./search.css";
 
 
 class Search extends Component {
@@ -31,7 +30,7 @@ class Search extends Component {
     API.getRecipeByName(this.state.recipeSearch)
       .then(res => {
         console.log("getRecipeByName response", res.data);
-        this.setState({ 
+        this.setState({
         recipes: res.data })})
       .catch(err => console.log(err));
   };
@@ -55,7 +54,7 @@ class Search extends Component {
     return (
       <div>
 
-          <Jumbotron />
+          <SearchPic />
             <Container>
               <Row>
                 <Col size="md-12">
@@ -97,11 +96,11 @@ class Search extends Component {
                             <RecipeListItem
                               key={recipe.name}
                               title={recipe.name}
-                              href={recipe.videos[0].video}
+                              href={recipe.videos}
                               ingredients={recipe.ingredients} ///loop through the array here
                               instructions={recipe.descriptionPlain}
                             />
-                            <Video videoId={recipe.videos[0].video} />
+                            <Video videoId={recipe.videos} />
                           </div>
                         );
                       })}

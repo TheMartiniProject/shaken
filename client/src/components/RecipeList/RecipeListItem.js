@@ -10,9 +10,10 @@ export const RecipeListItem = props => (
         <Col size="xs-8 sm-9">
           <h3>{props.title}</h3>
           <p>Ingredients: {props.ingredients.map(ingredient => (
-            <div>{ingredient.textPlain}</div>
+            <div>{ingredient}</div>
           ))}</p>
-          <p>Directions: {props.instructions}</p>
+          <p>Directions:
+          <br />{props.instructions}</p>
         </Col>
       </Row>
     </Container>

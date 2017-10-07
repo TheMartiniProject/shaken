@@ -11,47 +11,25 @@ const RecipeSchema = new Schema({
     type: String,
     required: false
   },
-  videos :
-      {
-          video : {
+  videos  : {
             type: [String],
             required: false
-          },
-          type : {
-            type: [String],
-            required: false
-          }
       },
-  ingredients :
-      {
-          type : {
+  ingredients : {
             type: [String],
             required: false
-          },
-          id : {
-            type: [String],
-            required: false
-          },
-          text : {
-            type: [String],
-            required: false
-          },
-          textPlain : {
-            type: [String],
-            required: false
-          }
       },
   id: {
     type: String,
-    required: true
+    required: false
   },
   name: {
     type: String,
-    required: true
+    required: false
   },
   descriptionPlain: {
     type: String,
-    required: true
+    required: false
   }//,
   // This only saves one note's ObjectId, ref refers to the Note model
   // for one-to-many, change this to an array

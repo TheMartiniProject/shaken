@@ -17,6 +17,7 @@ const recipeController = require("../controllers/recipeController.js");
 module.exports = router
 .get("/recipeAll", recipeController.findAll)
 .get("/recipeByName/:name", recipeController.findRByName)
+.post("/createRecipe", recipeController.create)
 
 // router.route("/")
 //   .get(recipeController.findAll);
