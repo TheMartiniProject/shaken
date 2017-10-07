@@ -31,13 +31,15 @@ class Form extends Component {
         this.state.ingredients && 
         this.state.descriptionPlain && 
         this.state.videos) {
-        var ing = this.state.ingredients
-        console.log('["' + ing.replace(/, /g, '","') + '"]');
+
+        let vid = this.state.videos
+        let vidStore = vid.replace("https://www.youtube.com/watch?v=", "");
+
       API.saveRecipe({
         name: this.state.name,
-        ingredients: ing,
+        ingredients: this.state.ingredients,
         descriptionPlain: this.state.descriptionPlain,
-        videos: this.state.videos
+        videos: vidStore
       })
         .then(res =>
         window.location.pathname = res.data)
