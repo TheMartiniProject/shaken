@@ -25,7 +25,8 @@ mongoose.Promise = Promise;
 // Database configuration with mongoose
 // mongoose.connect("mongodb://localhost/recipelist");
 mongoose.connect(
-  "mongodb://localhost/recipelist",
+  // "mongodb://localhost/recipelist",
+  "mongodb://heroku_5x4mdx9l:ctmlpchuih245hpkh7g8rbo6cl@ds013495.mlab.com:13495/heroku_5x4mdx9l",
   {
     useMongoClient: true
   }
